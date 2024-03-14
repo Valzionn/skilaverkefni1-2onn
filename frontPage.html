@@ -7,16 +7,63 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 
-<body class="flex flex-col justify-between bg-scroll"
-  style="background-image: url('background-image.png'); background-position: center;
-   background-repeat: no-repeat; background-size:contain;">
-  <div class="mb-auto">
-    <div class="h-screen w-1/6 m-4 bg-amber-100 shadow-lg">
-      <div>
+<body class="flex flex-col justify-between bg-scroll" style="background-image: url('background-image3.png'); background-position: center;
+   background-repeat: no-repeat; background-size:cover;">
+      <div class="h-screen w-1/6 m-4 bg-amber-100 shadow-lg shadow-slate-600">
+        <div>
+          <button class="bg-amber-600 rounded-full" style="border: crimson;">
+            <a href="menu.html">
+            </a>Menu
+          </button>
+        </div>
 
+        <div>
+
+        </div>
+        <!-- Using utilities: -->
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Button
+</button>
+
+<!-- Extracting component classes: -->
+<button class="btn btn-blue">
+  Button
+</button>
+
+<style>
+  .btn {
+    @apply font-bold py-2 px-4 rounded;
+  }
+  .btn-blue {
+    @apply bg-blue-500 text-white;
+  }
+  .btn-blue:hover {
+    @apply bg-blue-700;
+  }
+</style>
       </div>
-    </div>
-  </div>
+      <!-- Using utilities: -->
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Button
+</button>
+
+<!-- Extracting component classes: -->
+<button class="btn btn-blue">
+  Button
+</button>
+
+<style>
+  .btn {
+    @apply font-bold py-2 px-4 rounded;
+  }
+  .btn-blue {
+    @apply bg-blue-500 text-white;
+  }
+  .btn-blue:hover {
+    @apply bg-blue-700;
+  }
+</style>
+
 </body>
 
 </html>
