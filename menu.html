@@ -7,67 +7,77 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body class="bg-yellow-100">
+<body class="bg-yellow-100 max-h-1200px min-w-screen-lg">
     <div class="bg-center bg-scroll min-h-screen" style="background-image: url('background-image3.png'); 
         background-position: center; background-repeat: no-repeat; background-size: cover;">
         <div class="flex flex-row justify-between">
-            <div class="h-fit w-1/6 m-4 bg-amber-100 shadow-lg shadow-slate-600">
-                <nav class="flex flex-col">
-                    <div>
-                        <button id="menuButton"
-                            class="bg-stone-300 hover:bg-stone-400 text-white font-bold w-full pt-4 rounded border-2 border-yellow-400">
-                            Menu
-                        </button>
-                    </div>
-                    <div>
-                        <button id="menuButton"
-                            class="bg-stone-300 hover:bg-stone-400 text-white font-bold w-full pt-4 rounded border-2 border-yellow-400">
-                            Menu
-                        </button>
-                    </div>
-                    <div>
-                        <button id="menuButton"
-                            class="bg-stone-300 hover:bg-stone-400 text-white font-bold w-full pt-4 rounded border-2 border-yellow-400">
-                            Menu
-                        </button>
-                    </div>
-                    <div>
-                        <button id="menuButton"
-                            class="bg-stone-300 hover:bg-stone-400 text-white font-bold w-full pt-4 rounded border-2 border-yellow-400">
-                            Menu
-                        </button>
-                    </div>
-                    <div>
-                        <button class="bg-stone-300 hover:bg-stone-400 text-white font-bold w-full pt-4 rounded">About
-                            Us
-                            <a href="aboutUs"></a>
-                        </button>
-                    </div>
-                </nav>
+            <div class="h-svh w-1/6 overflow-auto sticky top-0">
+                <div class="h-10"></div>
+                <div class="h-1/2 m-4 overflow-y-auto bg-amber-100 shadow-lg shadow-slate-600 rounded">
+                    <nav class="flex flex-col">
+                        <div>
+                            <button id="menuButton"
+                                class=" hover:bg-cyan-100 text-white font-bold w-full pt-4 rounded border-2 border-yellow-400">
+                                Menu
+                            </button>
+                        </div>
+                        <div>
+                            <button id="menuButton"
+                                class="bg-stone-300 hover:bg-stone-400 text-white font-bold w-full pt-4 rounded border-2 border-yellow-400">
+                                Menu
+                            </button>
+                        </div>
+                        <div>
+                            <button id="menuButton"
+                                class="bg-stone-300 hover:bg-stone-400 text-white font-bold w-full pt-4 rounded border-2 border-yellow-400">
+                                Menu
+                            </button>
+                        </div>
+                        <div>
+                            <button id="menuButton"
+                                class="bg-stone-300 hover:bg-stone-400 text-white font-bold w-full pt-4 rounded border-2 border-yellow-400">
+                                Menu
+                            </button>
+                        </div>
+                        <div>
+                            <button
+                                class="bg-stone-300 hover:bg-stone-400 text-white font-bold w-full pt-4 rounded">About
+                                Us
+                                <a href="aboutUs"></a>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
             </div>
             <div class="w-4/6 mt-4">
-                <div class="grid grid-cols-2">
+                <div class="flex"><img src="logo.png" alt="" class="size-96 mx-auto"></div>
+                <div class="grid grid-cols-2 gap-10 mt-4">
                     <div class="row-span-2">
                         <h1
                             class="text-2xl lg:text-9xl text-center -skew-y-12 font-carattere italic text-rose-800 underline underline-offset-4 decoration-double decoration-amber-300">
                             Starters</h1>
                     </div>
-                    <div>
+                    <div class="border-2 border-black bg-orange-300">
                         <img src="pork belly bites.jpg" alt=""
-                            class="size-48 rounded-full border-2 border-black float-right object-scale-down">
-                        <p class="border-2 border-black bg-orange-300 justify-items-center">Pork Belly Bites: Crispy
+                            class="size-28 rounded-full border-2 border-black float-right object-scale-down">
+                        <p class="">Pork Belly Bites: Crispy
                             cubes of pork belly glazed with a honey-garlic sauce.</p>
                     </div>
-                    <div class="border-2 border-black bg-orange-300"><img src="Char-siu-bao.jfif" alt=""
+                    <div class="border-2 border-black bg-orange-300 overflow-auto"><img src="Char-siu-bao.jfif" alt=""
                             class="size-28 rounded-full border-2 border-black float-right object-scale-down">
                         <p>Char Siu Bao: Fluffy steamed buns filled with Cantonese BBQ pork.</p>
                     </div>
                 </div>
-                <h1>Soups and Salads</h1>
-                <div class="grid grid-cols-2 gap-10">
+
+                <div class="grid grid-cols-2 gap-10 mt-4">
                     <div class="border-2 border-black bg-orange-300"><img src="Spicy-pork-ramen.jfif" alt=""
                             class="size-28 rounded-full border-2 border-black float-right object-scale-down">
                         <p>Spicy Pork Ramen: Rich broth with tender slices of pork, soft-boiled egg, and noodles.</p>
+                    </div>
+                    <div class="row-span-2">
+                        <h1
+                            class="text-2xl lg:text-8xl text-center -skew-y-12 font-carattere italic text-emerald-800 underline underline-offset-4 decoration-double decoration-green-300">
+                            Soups <br>and Salads</h1>
                     </div>
                     <div class="border-2 border-black bg-orange-300"><img src="Pork-carnitas-salad.jfif" alt=""
                             class="size-28 rounded-full border-2 border-black float-right object-scale-down">
@@ -75,12 +85,18 @@
                             dressing.</p>
                     </div>
                 </div>
-                <h1>Main Courses</h1>
-                <div class="grid grid-cols-2 grid-rows-2 gap-10">
+
+                <div class="grid grid-cols-2 gap-10 mt-4">
+                    <div></div>
                     <div class="border-2 border-black bg-orange-300"><img src="Pork-schnitzel.jfif" alt=""
                             class="size-28 rounded-full border-2 border-black float-right object-scale-down">
                         <p>Pork Schnitzel: Breaded and fried pork cutlets served with lemon wedges and parsley potatoes.
                         </p>
+                    </div>
+                    <div class="row-span-2">
+                        <h1
+                            class="text-2xl lg:text-8xl text-center -skew-y-12 font-carattere italic text-cyan-800 underline underline-offset-4 decoration-double decoration-blue-300">
+                            Main Courses</h1>
                     </div>
                     <div class="border-2 border-black bg-orange-300"><img src="Pulled-pork-sandwitch.jfif" alt=""
                             class="size-28 rounded-full border-2 border-black float-right object-scale-down">
@@ -93,11 +109,16 @@
                     </div>
 
                 </div>
-                <h1>Desserts</h1>
-                <div class="grid grid-cols-2 gap-10">
+
+                <div class="grid grid-cols-2 gap-10 mt-4">
                     <div class="border-2 border-black bg-orange-300"><img src="Bacon-maple-ice-cream.jfif" alt=""
                             class="size-28 rounded-full border-2 border-black float-right object-scale-down">
                         <p>Bacon-Maple Ice Cream: Creamy ice cream with candied bacon bits and a maple syrup swirl.</p>
+                    </div>
+                    <div class="row-span-2">
+                        <h1
+                            class="text-2xl lg:text-8xl text-center -skew-y-12 font-carattere italic text-fuchsia-700 underline underline-offset-4 decoration-double decoration-purple-500">
+                            Desserts</h1>
                     </div>
                     <div class="border-2 border-black bg-orange-300"><img src="Pork-fat-beignets.jfif" alt=""
                             class="size-28 rounded-full border-2 border-black float-right object-scale-down">
@@ -105,8 +126,13 @@
                             dipping sauce.</p>
                     </div>
                 </div>
-                <h1>Beverages</h1>
-                <div class="grid grid-cols-2 gap-10">
+
+                <div class="grid grid-cols-2 gap-10 mt-4">
+                    <div class="row-span-2">
+                        <h1
+                            class="text-2xl lg:text-8xl text-center -skew-y-12 font-carattere italic text-indigo-600 underline underline-offset-4 decoration-double decoration-teal-300">
+                            Beverages</h1>
+                    </div>
                     <div class="border-2 border-black bg-orange-300"><img src="Smoky-bacon-bloody-mary.jfif" alt=""
                             class="size-28 rounded-full border-2 border-black float-right object-scale-down">
                         <p>Smoky Bacon Bloody Mary: A classic cocktail with a bacon twist.</p>
@@ -116,108 +142,80 @@
                         <p>Apple-Pork Julep: Bourbon mixed with apple cider and a hint of smoked pork.</p>
                     </div>
                 </div>
-                <h1 class="text-3xl font-bold underline">
-                    Hello world!
-                </h1>
-                <div class="grid grid-cols-2 grid-rows-2 gap-2">
-                    <div class="border-2 border-cyan-500 bg-slate-300"><img src="critic1.PNG" alt=""
-                            class="size-32 rounded-full z-10 shadow-lg shadow-slate-800">
-                        <p>From "FoodieFrenzy":
-                            "Nestled in the heart of Iceland's serene countryside, the guesthouse's dinner options are
-                            an
-                            absolute delight!
-                            The succulent pork dish, seasoned to perfection with local herbs and spices, is a true
-                            testament
-                            to Icelandic culinary excellence.
-                            Each bite is a journey through layers of flavor, leaving you craving more. Pair it with
-                            their
-                            exquisite sides and you have a meal fit for royalty.
-                            A culinary experience not to be missed!"</p>
-                    </div>
-                    <div class="border-2 border-cyan-500 bg-slate-300">
-                        <img src="critic2.PNG" alt="" class="size-32 rounded-full z-10 shadow-lg shadow-slate-800">
-                        <p>From "GourmetExplorer":
-                            "Iceland's hidden gem! The dinner at this rustic guesthouse is a symphony of taste and
-                            texture.
-                            Their signature pork dish is a masterpiece of local cuisine, showcasing the freshest
-                            ingredients
-                            the region has to offer.
-                            From the first bite, you're transported to a realm of culinary bliss. Tender, juicy, and
-                            bursting with flavor,
-                            it's a true celebration of Icelandic culinary heritage. A must-visit for any food
-                            enthusiast!"
-                        </p>
-                    </div>
-                    <div class="border-2 border-cyan-500 bg-slate-300"><img src="critic3.PNG" alt=""
-                            class="size-32 rounded-full z-10 shadow-lg shadow-slate-800">
-                        <p>
-                            From "CulinaryConnoisseur":
-                            "Prepare to be amazed! The dinner options at this Icelandic guesthouse are nothing short of
-                            extraordinary.
-                            The pork dish, in particular, is a revelation. Cooked to perfection, it's tender, flavorful,
-                            and
-                            utterly satisfying.
-                            Each component of the meal is thoughtfully crafted, highlighting the best of Icelandic
-                            cuisine.
-                            From the ambiance to the presentation,
-                            every detail is meticulously executed. Dining here is an experience that will leave you
-                            enchanted and eager to return."</p>
-                    </div>
-                    <div class="border-2 border-cyan-500 bg-slate-300">
-                        <img src="critic4.PNG" alt="" class="size-32 rounded-full z-10 shadow-lg shadow-slate-800">
-                        <p>From "EpicureanEscapades":
-                            "An unforgettable culinary journey awaits at this charming Icelandic guesthouse. The dinner
-                            options, especially the pork,
-                            are simply divine. From the first glance to the last bite, every aspect of the meal is a
-                            testament to the chef's skill and dedication.
-                            The pork, tender and juicy, is infused with the essence of the Icelandic countryside,
-                            creating a
-                            flavor profile that is both comforting and exciting.
-                            A true culinary masterpiece that will linger in your memory long after the meal is over."
-                        </p>
-                    </div>
-                </div>
             </div>
             <div class="w-1/6 m-4">
-                <div class="overflow-auto h-1/4 border-2 border-cyan-500 bg-slate-300 p-4">
+                <div class="h-10"></div>
+                <div class="overflow-auto h-1/2 border-2 border-cyan-500 bg-slate-200 p-4">
                     <h2 class="text-lg font-bold mb-4">Critics</h2>
-                    <div class="space-y-4">
-                        <!-- Review from FoodieFrenzy -->
-                        <div>
-                            <p><strong>From "FoodieFrenzy":</strong> "Nestled in the heart of Iceland's serene
-                                countryside, the guesthouse's dinner options are an absolute delight! The succulent pork
-                                dish, seasoned to perfection with local herbs and spices, is a true testament to
-                                Icelandic culinary excellence. Each bite is a journey through layers of flavor, leaving
-                                you craving more. Pair it with their exquisite sides and you have a meal fit for
-                                royalty. A culinary experience not to be missed!"</p>
+                    <div class="space-y-7">
+                        <div class="border-2 border-cyan-500 bg-slate-300"><img src="critic1.PNG" alt=""
+                                class="size-32 rounded-full z-10 shadow-lg shadow-slate-800">
+                            <p>From "FoodieFrenzy":
+                                "Nestled in the heart of Iceland's serene countryside, the guesthouse's dinner
+                                options are
+                                an
+                                absolute delight!
+                                The succulent pork dish, seasoned to perfection with local herbs and spices, is a
+                                true
+                                testament
+                                to Icelandic culinary excellence.
+                                Each bite is a journey through layers of flavor, leaving you craving more. Pair it
+                                with
+                                their
+                                exquisite sides and you have a meal fit for royalty.
+                                A culinary experience not to be missed!"</p>
                         </div>
-                        <!-- Review from GourmetExplorer -->
-                        <div>
-                            <p><strong>From "GourmetExplorer":</strong> "Iceland's hidden gem! The dinner at this rustic
-                                guesthouse is a symphony of taste and texture. Their signature pork dish is a
-                                masterpiece of local cuisine, showcasing the freshest ingredients the region has to
-                                offer. From the first bite, you're transported to a realm of culinary bliss. Tender,
-                                juicy, and bursting with flavor, it's a true celebration of Icelandic culinary heritage.
-                                A must-visit for any food enthusiast!"</p>
+                        <div class="border-2 border-cyan-500 bg-slate-300">
+                            <img src="critic2.PNG" alt="" class="size-32 rounded-full z-10 shadow-lg shadow-slate-800">
+                            <p>From "GourmetExplorer":
+                                "Iceland's hidden gem! The dinner at this rustic guesthouse is a symphony of taste
+                                and
+                                texture.
+                                Their signature pork dish is a masterpiece of local cuisine, showcasing the freshest
+                                ingredients
+                                the region has to offer.
+                                From the first bite, you're transported to a realm of culinary bliss. Tender, juicy,
+                                and
+                                bursting with flavor,
+                                it's a true celebration of Icelandic culinary heritage. A must-visit for any food
+                                enthusiast!"
+                            </p>
                         </div>
-                        <!-- Review from CulinaryConnoisseur -->
-                        <div>
-                            <p><strong>From "CulinaryConnoisseur":</strong> "Prepare to be amazed! The dinner options at
-                                this Icelandic guesthouse are nothing short of extraordinary. The pork dish, in
-                                particular, is a revelation. Cooked to perfection, it's tender, flavorful, and utterly
-                                satisfying. Each component of the meal is thoughtfully crafted, highlighting the best of
-                                Icelandic cuisine. From the ambiance to the presentation, every detail is meticulously
-                                executed. Dining here is an experience that will leave you enchanted and eager to
-                                return."</p>
+                        <div class="border-2 border-cyan-500 bg-slate-300"><img src="critic3.PNG" alt=""
+                                class="size-32 rounded-full z-10 shadow-lg shadow-slate-800">
+                            <p>
+                                From "CulinaryConnoisseur":
+                                "Prepare to be amazed! The dinner options at this Icelandic guesthouse are nothing
+                                short of
+                                extraordinary.
+                                The pork dish, in particular, is a revelation. Cooked to perfection, it's tender,
+                                flavorful,
+                                and
+                                utterly satisfying.
+                                Each component of the meal is thoughtfully crafted, highlighting the best of
+                                Icelandic
+                                cuisine.
+                                From the ambiance to the presentation,
+                                every detail is meticulously executed. Dining here is an experience that will leave
+                                you
+                                enchanted and eager to return."</p>
                         </div>
-                        <!-- Review from EpicureanEscapades -->
-                        <div>
-                            <p><strong>From "EpicureanEscapades":</strong> "The dinner options, especially the pork, are
-                                simply divine. From the first glance to the last bite, every aspect of the meal is a
-                                testament to the chef's skill and dedication. The pork, tender and juicy, is infused
-                                with the essence of the Icelandic countryside, creating a flavor profile that is both
-                                comforting and exciting. A true culinary masterpiece that will linger in your memory
-                                long after the meal is over."</p>
+                        <div class="border-2 border-cyan-500 bg-slate-300">
+                            <img src="critic4.PNG" alt="" class="size-32 rounded-full z-10 shadow-lg shadow-slate-800">
+                            <p>From "EpicureanEscapades":
+                                "An unforgettable culinary journey awaits at this charming Icelandic guesthouse. The
+                                dinner
+                                options, especially the pork,
+                                are simply divine. From the first glance to the last bite, every aspect of the meal
+                                is a
+                                testament to the chef's skill and dedication.
+                                The pork, tender and juicy, is infused with the essence of the Icelandic
+                                countryside,
+                                creating a
+                                flavor profile that is both comforting and exciting.
+                                A true culinary masterpiece that will linger in your memory long after the meal is
+                                over."
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -229,5 +227,38 @@
 
     <script src="scripts.js"></script>
 </body>
+<footer class="grid grid-cols-3 bg-amber-100 text-center lg:text-left">
+    <div id="aboutUs" class="text-gray-700 text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Company Name:
+        <a class="text-gray-800"
+            href="https://www.youtube.com/watch?v=WhEIz9SzrPk">frontdesk@fjolskylduveitingastadur.is</a>
+    </div>
+    <div>
+        
+    </div>
+    <div>
+        <section id="contactUs" class="bg-white dark:bg-gray-900">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+                <form action="#" class="space-y-8">
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                        <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                    </div>
+                    <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                </form>
+            </div>
+          </section>
+    </div>
+</footer>
 
 </html>
